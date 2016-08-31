@@ -1,3 +1,5 @@
+Markup : ![picture alt](https://ferizalramli.files.wordpress.com/2016/03/screen-shot-2015-10-07-at-11-11-39-am.png "Clinton vs Trump")
+
 ### Pick a Pres!
 
 In this game, players will have the opportunity to pick our next President by answering some silly, non-political questions
