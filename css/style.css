@@ -1,0 +1,22 @@
+body {
+  box-sizing: border-box;
+  padding: 2rem;
+}
+#hillz {
+    width: 50%;
+    float: left;
+}
+#trump {
+    width: 45%;
+    float: left;
+}
+
+.clearfix:after {
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+}
+

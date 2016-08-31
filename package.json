@@ -1,0 +1,31 @@
+{
+  "name": "pick-a-pres",
+  "version": "1.0.0",
+  "description": "simple game to pick the next president",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LynnFleck/Lynn-s-Project-1-Game.git"
+  },
+  "keywords": [
+    "presidential",
+    "election",
+    "2016"
+  ],
+  "author": "Lynn Fleck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LynnFleck/Lynn-s-Project-1-Game/issues"
+  },
+  "homepage": "https://github.com/LynnFleck/Lynn-s-Project-1-Game#readme",
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.0",
+    "eslint-plugin-react": "^6.2.0"
+  }
+}
