@@ -16,10 +16,19 @@ In this game, players will have the opportunity to pick our next President by an
 - Get an answer wrong, and the other candidate will receive a letter.
 - First candidate to have all the letters in their name will be your next President!
 
+## Winner ##
+- When a candidate has all letters in their name, they are pronounced the WINNER!
 
+<!-- # Game
 
+Game is a class
 
+These are the attributes a Game should have:
 
+  - `guesses` -> set to null
+  - `guessedLetters` -> set to null
+  - `words` -> set to null
+  - `currentWord` -> set to null -->
 
 
 
