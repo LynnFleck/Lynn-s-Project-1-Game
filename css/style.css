@@ -23,14 +23,26 @@ button {
   font-weight: 700;
 }
 #hillz {
-    width: 50%;
-    float: left;
-    background: red;
+  width: 50%;
+  float: left;
+  background: red;
+}
+#hillz-photo {
+  display: block;
+  height: 200px;
+  background-color: #999;
+  margin: 20px;
 }
 #trump {
-    width: 50%;
-    float: left;
-    background: blue;
+  width: 50%;
+  float: left;
+  background: blue;
+}
+#trump-photo {
+  display: block;
+  height: 200px;
+  background-color: #999;
+  margin: 20px;
 }
 li.letter {
   width: 60px;

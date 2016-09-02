@@ -1,5 +1,3 @@
-console.log('letter.js is here')
-
 class Letter {
   constructor(value) {
     this.value = value;
@@ -9,10 +7,8 @@ class Letter {
     this.hidden = false;
   }
   render() {
-    if(this.hidden === true) {
+    if (this.hidden === true) {
       return '';
-    } else {
-      return this.value;
-    }
+    } return this.value;
   }
 }
