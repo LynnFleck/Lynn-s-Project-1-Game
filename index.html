@@ -6,13 +6,31 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
 </head>
 <body>
-  <ul id="hillz-letters">
-    <!-- <li class="letter">H</li> -->
+
+<h1>Pick a Pres</h1>
+  <h2>In this game, you'll have the opportunity to pick our next President!</h2>
+  <h3>Rules:</h3>
+  <p>First, you'll select a candidate, then answer a few questions about the candidates.</p>
+  <ul>
+    <li>Get the question right, and you'll score one letter in your candidate's name.</li>
+    <li>Get an answer wrong, and the other candidate will get a letter.</li>
+    <li>First candidate to have all the letters in their name will be your next President!</li>
   </ul>
-  <ul id="trump-letters">
-    <!-- <li class="letter">H</li> -->
-  </ul>
-  <script src="js/game.js" type="text/javascript"></script>
+  <div id='pickOne'>
+    <button id="hillz-button" type="text">Hillary for America</button>
+    <button id="trump-button" type="text">Make America Great Again</button>
+  </div>
+  <div id='candidates'>
+    <h3>The candidates</h3>
+    <div id="hillz">
+      <div id="hillz-photo">The Hillz(photo)</div>
+      <ul id="hillz-letters" class="clearfix"></ul>
+    </div>
+    <div id="trump">
+      <div id="trump-photo">The Donald(photo)</div>
+      <ul id="trump-letters" class="clearfix"></ul>
+    </div>
   <script src="js/letter.js" type="text/javascript"></script>
+  <script src="js/game.js" type="text/javascript"></script>
 </body>
 </html>
