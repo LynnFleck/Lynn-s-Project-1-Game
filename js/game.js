@@ -25,12 +25,12 @@ class Game {
   }
   imWithHer() {
     this.forHillz = true;
-    alert('Congrats! You\'re playing for Hillary!')
+    alert('Congrats! You\'re playing for Hillary!');
     this.forTrump = false;
   }
   imWithHim() {
     this.forTrump = true;
-    alert('Congrats! You\'re playing for Trump!')
+    alert('Congrats! You\'re playing for Trump!');
     this.forHillz = false;
   }
   guessCorrectlyHillz() {
@@ -55,13 +55,30 @@ class Game {
       letterHolder.innerHTML = letter.render();
       });
   }
-  myVote() {
-    if (true) {
-      if (true) {
-        this.guessCorrectlyHillz();
-      } else {
-        this.guessCorrectlyTrump();
-      }
+  askQuestion() {
+    let question = prompt('Hillary\'s favorite color is');
+  }
+  // myVote() {
+
+  //   // if player has selected forHillz
+  //   if (this.forHillz) {
+  //     // ask question
+  //     // if player has selected the correct answer
+  //     if (true) {
+  //       this.guessCorrectlyHillz();
+  //     } else {
+  //       this.guessCorrectlyTrump();
+  //     }
+  //   }
+  // }
+  isWinner() {
+    // check to see if a candidate has 5 characters filled
+    if (this.hmove === 5) {
+      alert('Hillary is the winner!!!!!!');
+    } else if (this.tmove === 5) {
+      alert('Trump is the winner!!!!!!');
+    } else {
+
     }
   }
 }
@@ -70,6 +87,7 @@ const n = new Game();
 n.createLetters();
 n.renderH();  // only use when an answer is given correctly
 n.renderT();
+
 // console.log(nG.hillzLetters[0]);
 window.onload = () => {
   document.querySelector('#hillz-button').addEventListener('click', () => { n.imWithHer(); });
