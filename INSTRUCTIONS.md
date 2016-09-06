@@ -18,7 +18,6 @@ In this game, players will have the opportunity to pick our next President by an
 
 ## Winner ##
 - When a candidate has all letters in their name, they are pronounced the WINNER!
-- 
 
 ## Technologies Used ##
 - This game was built with HTML, CSS and vanilla Javascript
