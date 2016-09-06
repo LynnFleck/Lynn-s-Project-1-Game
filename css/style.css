@@ -1,68 +1,225 @@
 body {
+  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
-  padding: 2rem;
-  background: azure;
-  margin: 0 auto;
-  padding-bottom: 50px;
   font-size: 16px;
-  font-family: Lato, sans-serif;
   text-align: center;
+  background-image: url("../images/flag-background.jpg");
+  background-size: cover;
 }
-h1 {
-  font-size: 3em;
-  font-weight: 700;
-  padding-top: 30px;
+#container,
+#introModal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
-button {
+#page-bkgd,
+#modal-content {
+  position: relative;
+  margin: 60px auto;
+  width: 900px;
+  padding: 45px;
+}
+#modal-content {
+  height: 525px;
+}
+#page-bkgd {
+  height: 525px;
+  background-color: #ecf0f1;
+}
+#pres-logo {
+  background-image: url("../images/Pick-a-Pres-logo.png");
+  background-repeat: no-repeat;
+  top: -20px;
+  width: 900px;
+  height: 215px;
+  position: absolute;
+  text-indent: -9999px;
+  margin: 0;
+  background-position-x: 50%;
+}
+#game-box {
+  display: none;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-top: 120px;
+  z-index: 10;
+  position: relative;
+}
+#start-button {
+  margin-top: 10px;
   padding: 10px 20px;
-  font-size: 1em;
-  border-radius: 8px;
-  margin: 10px 10px 30px;
-  background-color: red;
-  color: white;
-  font-weight: 700;
+  background-color: #c23824;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  border: 0;
+  border-bottom: 4px solid #2b3e51;
+}
+
+/* MODAL BOX  --------------------------------------*/
+
+#modal-content h2 {
+  margin-top: 160px;
+}
+#trump-button .my-button-color {
+  right: 0;
+}
+#hillz-button .my-button-color {
+  left: 0;
+}
+.my-button-color {
+  background-image: url('../images/stars-bkgd.png');
+  height: 200px;
+  width: 445px;
+  top: 25px;
+  position: absolute;
+  z-index: 2;
+}
+#pick-one {
+  height: 254px;
+  width: 90%;
+  background-color: #fff;
+  z-index: 1;
+  position: absolute;
+  bottom: 40px;
+  left: 5%;
+  padding: 10px 0;
+}
+#trump-button,
+#hillz-button {
+  height: 254px;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.my-button {
+  width: 100%;
+  height: 254px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 5;
+}
+#trump-button .my-button {
+  background-image: url("../images/Trump-button.png");
+}
+#hillz-button .my-button {
+  background-image: url("../images/Hillz-button.png");
+}
+#disclaimer {
+  position: absolute;
+  bottom: -5px;
+  z-index: 10;
+  width: 900px;
+}
+
+/* RULES BOX  -----------------------------------------------------*/
+#rules-box h2 {
+  margin-bottom: 0;
+}
+#rules-box p {
+  font-size: 24px;
+  margin: 5px;
+}
+#rules-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px auto;
+}
+#rules-box li {
+  display: inline-block;
+}
+#rules-box li {
+  display: inline-block;
+  width: 290px;
+  line-height: 1.4;
+  border-right: 1px solid #666;
+}
+#rules-box li:last-child {
+  border: none;
+}
+
+/* LET'S GET STARTED BUTTON  --------------------------------------*/
+
+#your-player {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+  color: #999;
+  text-transform: uppercase;
+  border-top: 2px #c23824 solid;
+  border-bottom: 2px #2b3e51 solid;
+  width: 450px;
+  margin: 0 auto;
+}
+.hillzRed {
+  color: #c23824;
+}
+.trumpBlue {
+  color: #2b3e51;
+}
+
+/* BOX WHERE LETTER WILL APPEAR  --------------------------------------*/
+
+#trump-box,
+#hillz-box {
+  height: 120px;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+#trump-box {
+  background-color: #2b3e51;
+}
+#hillz-box {
+  background-color: #c23824;
+}
+#candidate-names {
+  height: 125px;
+  width: 90%;
+  z-index: 1;
+  position: absolute;
+  bottom: 40px;
+  left: 5%;
+  padding: 10px 0;
+}
+#candidate-names ul {
+  padding: 5px 20px 0;
 }
 #hillz {
   width: 50%;
   float: left;
   background: red;
 }
-#hillz-photo {
-  display: block;
-  height: 200px;
-  background-color: #999;
-  margin: 20px;
-}
 #trump {
   width: 50%;
   float: left;
   background: blue;
 }
-#trump-photo {
-  display: block;
-  height: 200px;
-  background-color: #999;
-  margin: 20px;
-}
 li.letter {
   width: 60px;
-  background: wheat;
+  background: #ecf0f1;
   height: 60px;
   float: left;
   margin: 10px;
-  border-radius: 6px;
-  box-shadow: 5px 5px 5px #ccc;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 60px;
-  color: #666;
+  color: #2b3e51;
   list-style: none;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .clearfix:after {
-   visibility: hidden;
-   display: block;
-   font-size: 0;
-   content: " ";
-   clear: both;
-   height: 0;
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
-

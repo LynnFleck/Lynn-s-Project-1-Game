@@ -4,41 +4,58 @@
   <title>Pick a Pres Game</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/modal.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
 </head>
 <body>
-<!-- Trigger/Open The Modal -->
-<button id="startBtn">Let's get started</button>
-
-<div id="introModal" class="modal">
-  <div class="modal-content">
-    <span class="close">x</span>
-    <h1>Pick a Pres</h1>
-      <h2>In this game, you'll have the opportunity to pick our next President!</h2>
-      <h3>Rules:</h3>
-      <div id='pickOne' class="clearfix">
-        <p>First, you'll select a candidate, then answer a few questions about the candidates.</p>
-        <button id="hillz-button" type="text">Hillary for America</button>
-        <button id="trump-button" type="text">Make America Great Again</button>
+  <div id="container">
+    <div id="introModal">
+      <div id="modal-content">
+        <h2>In this game, you'll have the opportunity to pick our next President!<br>Ready to start? <strong>Select your player:</strong></h2>
+        <div id="pick-one">
+          <div id="hillz-button">
+            <div class="my-button"></div>
+            <div class="my-button-color"></div>
+          </div>
+          <div id="trump-button">
+            <div class="my-button"></div>
+            <div class="my-button-color"></div>
+          </div>
+        </div>
+        <p id="disclaimer">This game has not been approved by either candidate.</p>
       </div>
-      <ul>
-        <li>Get the question right, and you'll score one letter in your candidate's name.</li>
-        <li>Get an answer wrong, and the other candidate will get a letter.</li>
-        <li>First candidate to have all the letters in their name will be your next President!</li>
-      </ul>
+    </div>
+    <!-- end of modal -->
+    <div id="page-bkgd">
+      <h1 id="pres-logo">Pick a Pres</h1>
+      <div id="game-box">
+        <div id="rules-box">
+          <h2><strong>How to Play:</strong></h3>
+          <p>Answer a series of trivia questions about the two candidates:</p>
+          <ul>
+            <li><strong>ANSWER CORRECTLY</strong><br>
+                Your candidate will get<br>one letter in their name
+            </li>
+            <li><strong>ANSWER INCORRECTLY</strong><br>
+                The OTHER candidate will<br>get one letter in their name
+            </li>
+            <li><strong>WINNER</strong><br>
+                The first candidate with<br>all their letters wins!
+            </li>
+          </ul>
+        </div>
+        <div id="your-player">You're playing for</div>
+        <button id="start-button">Ask a QUESTION</button>
+        <div id="candidate-names">
+          <div id="hillz-box">
+            <ul id="hillz-letters" class="clearfix"></ul>
+          </div>
+          <div id="trump-box">
+            <ul id="trump-letters" class="clearfix"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-  <button id="question-button" type="text">I'm ready for my first question</button>
-  <div id='candidates'>
-    <h3>The candidates</h3>
-    <div id="hillz">
-      <div id="hillz-photo">The Hillz(photo)</div>
-      <ul id="hillz-letters" class="clearfix"></ul>
-    </div>
-    <div id="trump">
-      <div id="trump-photo">The Donald(photo)</div>
-      <ul id="trump-letters" class="clearfix"></ul>
-    </div>
   <script src="js/letter.js" type="text/javascript"></script>
   <script src="js/game.js" type="text/javascript"></script>
   <script src="js/play.js" type="text/javascript"></script>

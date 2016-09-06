@@ -1,14 +1,21 @@
-const n = new Game();
-n.createLetters();
-n.renderH();  // only use when an answer is given correctly
-n.renderT();
+const newGame = new Game();
 
-
-// console.log(nG.hillzLetters[0]);
 window.onload = () => {
-  document.querySelector('#hillz-button').addEventListener('click', () => { n.imWithHer(); });
-  document.querySelector('#trump-button').addEventListener('click', () => { n.imWithHim(); });
-  document.querySelector('#question-button').addEventListener('click', () => { n.askQuestion(); });
-  document.querySelector('#startBtn').addEventListener('click', () => { n.getModal(); });
-  document.querySelector('.close').addEventListener('click', () => { n.hideModal(); });
+
+// candidate hover states
+  document.querySelector('#trump-button')
+      .addEventListener('mouseout', () => { newGame.buttonUnhoverT(); });
+  document.querySelector('#hillz-button')
+      .addEventListener('mouseout', () => { newGame.buttonUnhoverH(); });
+  document.querySelector('#hillz-button')
+      .addEventListener('mouseenter', () => { newGame.buttonHoverH(); });
+  document.querySelector('#trump-button')
+      .addEventListener('mouseenter', () => { newGame.buttonHoverT(); });
+// candidate is selected, set up game board
+  document.querySelector('#hillz-button')
+      .addEventListener('click', () => { newGame.imWithHer(); });
+  document.querySelector('#trump-button')
+      .addEventListener('click', () => { newGame.imWithHim(); });
+  document.querySelector('#start-button')
+      .addEventListener('click', () => { newGame.playGame(); });
 };
