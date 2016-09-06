@@ -18,46 +18,12 @@ In this game, players will have the opportunity to pick our next President by an
 
 ## Winner ##
 - When a candidate has all letters in their name, they are pronounced the WINNER!
+- 
 
-<!-- # Game
+## Technologies Used ##
+- This game was built with HTML, CSS and vanilla Javascript
 
-Game is a class
-
-These are the attributes a Game should have:
-
-  - `guesses` -> set to null
-  - `guessedLetters` -> set to null
-  - `words` -> set to null
-  - `currentWord` -> set to null -->
+## Unsolved Problems ##
+I would like to resolve how to make the game work automatically, ie. when the player selects their candidate, they are asked questions until a winner is pronounced. I'd also like to create randomness to the questions/answers - currently, all the correct responses are in the index[1] spot :( 
 
 
-
-
-<!-- Technical Requirements
-
-Your app must:
-
-Render a game in the browser
-Design logic for winning & visually display which player won
-Include separate HTML / CSS / JavaScript files
-Use Javascript (jQuery optional... but not really suggested) for DOM manipulation
-Deploy your game online, where the rest of the world can access it (gh-pages)
-
-
-Necessary Deliverables
-
-A working game, built by you, hosted somewhere on the internet
-A link to your hosted working game in the URL section of your GitHub repo
-A git repository hosted on GitHub, with a link to your hosted game, and frequent commits dating back to the very beginning of the project
-A readme.md file with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, etc.
-
-
-Suggested Ways to Get Started
-
-Break the project down into different components (data, views, style, DOM manipulation) and brainstorm each component individually. Use whiteboards!
-Use your Development Tools (console.log, alert statements, etc) to debug and solve problems
-Work through the lessons in class & ask questions when you need to! Think about adding relevant code to your game each night
-Commit early, commit often. Don’t be afraid to break something because you can always go back in time to a previous version.
-Consult documentation resources (MDN, etc.) at home to better understand what you’ll be getting into.
-Don’t be afraid to write code that you know you will have to remove later. Create temporary elements (buttons, links, etc) that trigger events if real data is not available. For example, if you’re trying to figure out how to change some text when the game is over but you haven’t solved the win/lose game logic, you can create a button to simulate that until then.
- -->
